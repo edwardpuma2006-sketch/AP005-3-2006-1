@@ -1,0 +1,89 @@
+################# LISTAS #################
+
+my_lista = ['Rojo', 'Azul', 'Amarillo', 'Naranja', 'Violeta', 'Verde']
+
+print(my_lista)
+print(type(my_lista))
+print(my_lista[2])
+
+print("my_lista size:", len(my_lista))
+print(my_lista[0:2])
+print(my_lista[:2])
+
+# Agregar elementos
+my_lista.append('Blanco')
+print(my_lista)
+
+my_lista.insert(3, 'Negro')
+print(my_lista)
+
+my_lista.extend(['Marron', 'Gris'])
+print(my_lista)
+
+# Buscar elemento
+print(my_lista.index('Azul'))
+
+# Eliminar elemento
+my_lista.remove('Marron')
+print(my_lista)
+
+my_lista.insert(8, 'Marron')
+print(my_lista)
+
+print(my_lista.pop())
+print("size =", len(my_lista))
+
+# Multiplicar lista
+my_lista_3 = my_lista * 3
+print("my_lista_3:", my_lista_3)
+
+# Ordenar lista
+print("Sort:")
+my_lista.sort()
+print(my_lista)
+
+my_NumList = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+print("Ordering my_NumList:")
+my_NumList.sort()
+print(my_NumList)
+
+# Orden descendente
+my_NumList.sort(reverse=True)
+print("De mayor a menor:", my_NumList)
+
+
+################# TUPLAS #################
+
+print("########## TUPLAS ##########")
+
+# Convertir lista a tupla
+my_tupla = tuple(my_lista)
+print("my_tuple:", my_tupla)
+
+print(my_tupla[0])
+print(my_tupla[2])
+
+# Verificar contenido
+print('Rojo' in my_tupla)
+print(my_tupla.count('Rojo'))
+
+# Tupla de un solo elemento
+my_tupla_unitaria = ('Blanco',)
+print(my_tupla_unitaria)
+
+# Empaquetado
+my_tupla = 'Gaspar', 5, 8, 1999
+print(my_tupla)
+
+# Desempaquetado
+nombre, dia, mes, año = my_tupla
+print(nombre)
+print(dia)
+print(mes)
+print(año)
+
+print("Nombre:", nombre, "- Dia:", dia, "- Mes:", mes, "- Año:", año)
+
+# Convertir tupla a lista
+my_lista2 = list(my_tupla)
+print(my_lista2)
